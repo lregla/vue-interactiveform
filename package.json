@@ -1,0 +1,48 @@
+{
+  "name": "vue-interactiveform",
+  "version": "0.1.0",
+  "description": "A Vue.js plugin providing a conversational-styled UX for user input forms",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "node_modules/.bin/webpack-dev-server --config ./build/webpack.conf.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p --hide-modules --config ./build/webpack.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lregla/vue-interactiveform.git"
+  },
+  "keywords": [
+    "Vue",
+    "vuejs",
+    "plugin",
+    "form",
+    "ux"
+  ],
+  "authors": [
+    {
+      "name": "Lou Regla",
+      "email": "lou.regla@gofullscale.com"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lregla/vue-interactiveform/issues"
+  },
+  "homepage": "https://github.com/lregla/vue-interactiveform#readme",
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "css-loader": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "scss-loader": "0.0.1",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
