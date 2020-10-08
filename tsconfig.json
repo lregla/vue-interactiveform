@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es2018",
+    "target": "esnext",
     "module": "esnext",
+    "strict": true,
     "moduleResolution": "node",
     "lib": [
       "esnext",
@@ -9,10 +10,22 @@
       "dom"
     ],
     "esModuleInterop": true,
-    "strict": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "isolatedModules": true,
     "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./node_modules"
+      ],
+      "@/*": [
+        "./src/*"
+      ]
+    },
     "types": ["@types/node"]
   },
+
   "exclude": [
     "node_modules",
     "dist"

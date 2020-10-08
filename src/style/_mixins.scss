@@ -1,0 +1,12 @@
+@import "~bootstrap/scss/bootstrap-grid";
+
+@mixin close-button {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  // background: no-repeat center / cover transparent url('/img/global/icon-x-white.svg');
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-indent: 9999px;
+}
