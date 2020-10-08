@@ -8,6 +8,7 @@ module.exports = {
     filename: 'index.js',
     library: 'VueInteractiveForm',
     libraryTarget: 'commonjs',
+
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.vue'],
@@ -29,11 +30,12 @@ module.exports = {
             loader: 'babel-loader',
             options: {
               presets: [
-                '@babel/preset-env',
-                '@babel/preset-typescript'
+                'babel-preset-typescript-vue',
+                '@babel/preset-env'
               ],
               plugins: [
                 ['@babel/plugin-proposal-decorators', { 'legacy': true }],
+                ['@babel/plugin-proposal-class-properties', { 'loose': true }],
               ]
             }
           }
@@ -46,7 +48,7 @@ module.exports = {
           'css-loader',
           {
             loader: 'sass-loader',
-            options: { additionalData: "@import '@/style/default.scss';" }
+            options: { additionalData: '@import "@/style/default.scss";' }
           }
         ],
       }
